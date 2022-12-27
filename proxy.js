@@ -67,7 +67,8 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-const queueRemoveAllCircles = () => {
+// const queueRemoveAllCircles = () => {
+function queueRemoveAllCircles () {
   document.querySelectorAll('.outline-blue-dashed').forEach(e => e.classList.remove("outline-blue-dashed"));
   document.querySelectorAll('.outline-blue').forEach(e => e.classList.remove("outline-blue"));
   document.querySelectorAll("[data-queuevideomarker]").forEach(e => e.removeAttribute("data-queuevideomarker"));
