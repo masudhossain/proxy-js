@@ -19,7 +19,7 @@ window.addEventListener('message', function(event) {
   }
 
   if(event.data.execute == "addVideoMarkerCircle"){
-    console.log("addVideoMarkerCircle", event);
+//     console.log("addVideoMarkerCircle", event);
     let video_marker = event.data.video_marker;
 
     var element = document.querySelectorAll(`${video_marker.dom_tag}${video_marker.class_list.length > 0 ? `.${video_marker.class_list}` : ``}`)[video_marker.dom_index]
@@ -61,7 +61,7 @@ window.addEventListener('message', function(event) {
 
 document.addEventListener('keydown', function(e) {
   if (e.keyCode == 27) {
-    console.log("27 pressed")
+//     console.log("27 pressed")
     queueRemoveAllCircles();
     window.parent.postMessage({execute: "hideCommentForm"})
   }
