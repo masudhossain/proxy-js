@@ -159,17 +159,15 @@ body {
   /* box-shadow: inset 0px 0px 0px 2px #fff, 0 2px 20px 0px #0000004f!important; */
 }
 .q-circle-video-marker {
-  border: 3px solid #f5c402;
+  border: 3px solid red;
   position: absolute!important;
   z-index: 10000!important;
   width: 47px!important;
   height: 47px!important;
   border-radius: 50%!important;
-  background: #f5c402;
+  background: red;
   text-align: center!important;
-  color: black!important;
-  /* padding-left: 10px!important;
-  padding-right: 10px!important; */
+  color: white!important;
   font-size: 16px!important;
   font-weight: bold;
   font-family: 'Open Sans';
