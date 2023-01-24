@@ -253,7 +253,8 @@ function addCircle(x,y,element, event) {
 /**
   * Add a circle to the document and return its handle
 */
-const addVideoMarkerCircle = (element, video_marker) => {
+// const addVideoMarkerCircle = (element, video_marker) => {
+function addVideoMarkerCircle(element, video_marker) {
   // console.log("addVideoMarkerCircle", video_marker)
   if(element.tagName == "IMG" || element.tagName == "VIDEO") {
     element = element.parentElement;
