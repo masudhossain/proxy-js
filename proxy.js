@@ -320,7 +320,7 @@ document.onreadystatechange = () => {
 
     function receiveData(event) {
       // Use the received data
-      console.log(event.data.iframe); // John
+      console.log(event.data); // John
 //       console.log(event.data.age); // 30
     }
   }
