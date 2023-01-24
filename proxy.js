@@ -310,6 +310,18 @@ function isInViewport(element) {
 // Alternative to DOMContentLoaded event
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
-    toggleQueueCommentable(true)
+    toggleQueueCommentable(true);
+    
+    // Request data from the parent
+    window.parent.postMessage("RequestData", "*");
+
+    // Listen for messages from the parent
+    window.addEventListener("message", receiveData, false);
+
+    function receiveData(event) {
+      // Use the received data
+      console.log(event.data.iframe); // John
+//       console.log(event.data.age); // 30
+    }
   }
 };
