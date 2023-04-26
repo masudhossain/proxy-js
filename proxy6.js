@@ -75,9 +75,10 @@ function queueRemoveAllCircles () {
   document.querySelectorAll('.q-circle').forEach(e => e.remove());
 }
 
-document.addEventListener('mousedown', create );
+// document.addEventListener('mousedown', create );
 
 document.addEventListener('click', e => {
+  create(e);
   if((!e.target.classList.contains("q-ignore-element") && QUEUE_COMMENTABLE_STATE) || (e.target.dataset.videomarkerid != undefined)) {
     e.stopPropagation();
     e.preventDefault();
