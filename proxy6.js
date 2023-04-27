@@ -242,7 +242,7 @@ function addCircle(x,y,element, event) {
         x: document.getElementById('q-circle').dataset.x, 
         y: document.getElementById('q-circle').dataset.y, 
         url: document.getElementById('q-circle').dataset.url, 
-        scrollFromTop: window.pageYOffset || document.documentElement.scrollTop;
+        scrollFromTop: window.pageYOffset || document.documentElement.scrollTop
       }, 
       eventClientX: event.clientX, 
       eventClientY: event.clientY
