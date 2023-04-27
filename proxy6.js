@@ -241,7 +241,8 @@ function addCircle(x,y,element, event) {
       coordinates: {
         x: document.getElementById('q-circle').dataset.x, 
         y: document.getElementById('q-circle').dataset.y, 
-        url: document.getElementById('q-circle').dataset.url 
+        url: document.getElementById('q-circle').dataset.url, 
+        scrollFromTop: window.pageYOffset || document.documentElement.scrollTop;
       }, 
       eventClientX: event.clientX, 
       eventClientY: event.clientY
