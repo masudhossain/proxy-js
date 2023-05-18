@@ -17,6 +17,11 @@ window.addEventListener('message', function(event) {
     toggleQueueCommentable(event.data.boolean);
     queueRemoveAllCircles();
   }
+  
+  if(event.data.execute == "queueRemoveAllVideoMarkerCircles"){
+     console.log("Execute:queueRemoveAllVideoMarkerCircles")
+     queueRemoveAllVideoMarkerCircles();
+  }
 
   if(event.data.execute == "addVideoMarkerCircle"){
 //     console.log("addVideoMarkerCircle", event);
@@ -73,6 +78,11 @@ function queueRemoveAllCircles () {
   document.querySelectorAll('.outline-blue').forEach(e => e.classList.remove("outline-blue"));
   document.querySelectorAll("[data-queuevideomarker]").forEach(e => e.removeAttribute("data-queuevideomarker"));
   document.querySelectorAll('.q-circle').forEach(e => e.remove());
+}
+
+// Remove all video marker circles
+function queueRemoveAllVideoMarkerCircles () {
+  document.querySelectorAll('.q-circle-video-marker').forEach(e => e.remove());
 }
 
 // document.addEventListener('mousedown', create );
