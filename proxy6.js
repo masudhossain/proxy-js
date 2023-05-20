@@ -344,3 +344,22 @@ document.onreadystatechange = () => {
     }
   }
 };
+
+
+// Store the initial URL
+var initialURL = window.location.href;
+
+// Attach the onbeforeunload event
+window.onbeforeunload = function() {
+  // User is navigating to a different page
+  console.log('User is navigating to a different page');
+};
+
+// Attach the DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if the URL has changed and the DOM is fully loaded
+  if (initialURL !== window.location.href) {
+    // URL has changed and the DOM is fully loaded
+    console.log('User has navigated to a different page and the DOM is loaded');
+  }
+});
