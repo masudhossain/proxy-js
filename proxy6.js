@@ -1,3 +1,10 @@
+console.log("proxy6.js loaded");
+console.log("proxy6.js loaded");
+console.log("proxy6.js loaded");
+console.log("proxy6.js loaded");
+console.log("proxy6.js loaded");
+console.log("proxy6.js loaded");
+
 var QUEUE_COMMENTABLE_STATE = false;
 window.QUEUE_COMMENTABLE_STATE = QUEUE_COMMENTABLE_STATE;
 
